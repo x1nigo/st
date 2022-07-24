@@ -1,4 +1,4 @@
-# st-x1nigo
+# x1nigo's build of st
 My build of the Simple Terminal.
 
 ## Patches
