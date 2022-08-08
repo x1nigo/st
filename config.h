@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Bitstream Vera Sans Mono:regular:pixelsize=14:antialias=true:autohint=true";
-static int borderpx = 8;
+static char *font = "Bitstream Vera Sans Mono:regular:pixelsize=12:antialias=true:autohint=true";
+static int borderpx = 2;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -98,33 +98,28 @@ float alpha = 0.9;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	 /* eight (8) regular colors */
-        "#000",
-        "#ff5555",
-        "#009898",
-        "#fea44c",
-        "#005577",
-        "#7777ff",
-        "#00bbdd",
-        "#e6e6e6",
-
-        /* eight (8) bright colors */
-        "#8c42ab",
-        "#ec0101",
-        "#47d4b9",
-        "#ff8a18",
-        "#212338",
-        "#d71655",
-        "#00ddff",
-        "#ffffff",
-
+        "#0a0f14",
+        "#c33027",
+        "#26a98b",
+        "#edb54b",
+        "#195465",
+        "#4e5165",
+        "#33859d",
+        "#98d1ce",
+        "#10151b",
+        "#d26939",
+        "#081f2d",
+        "#245361",
+        "#093748",
+        "#888ba5",
+        "#599caa",
+        "#d3ebe9",
         [255] = 0,
-
         /* more colors can be added after 255 to use with DefaultXX */
         "#cccccc",
         "#555555",
-        "#eeeeee", /* default foreground colour */
-        "#121218", /* default background colour */
+        "#ebdbb1", /* fg */
+        "#121218", /* bg */
 };
 
 
