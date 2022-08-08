@@ -2,13 +2,13 @@
 My build of the Simple Terminal.
 
 ## Patches
-- alpha
-- blinking_cursor
-- bold-is-not-bright
-- scrollback
+- `alpha` (transparency)
+- `blinking_cursor` (adds different types of cursors styles)
+- `bold-is-not-bright` (used regular colors for bold, not bright)
+- `scrollback` (adds a scrollback feature)
 
 ## Requirements
-- ***libxft-bgra*** - Without this, st can't render colored emojis and will simply shut down if it sees one. If you don't have colored emojis, then you don't need to install this.
+- `libxft-bgra` - Without this, st can't render colored emojis and will simply shut down if it sees one. If you don't have colored emojis, then you don't need to install this.
 
 ## Notes
 If you want to zoom in/out, just press <kbd>Shift</kbd> + <kbd>Ctrl</kbd> then <kbd>j</kbd> and <kbd>k</kbd>.
