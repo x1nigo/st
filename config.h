@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Bitstream Vera Sans Mono:regular:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Jetbrains Mono:regular:pixelsize=14:antialias=true:autohint=true";
 static int borderpx = 2;
 
 /*
