@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:size=10:antialias=true:autohint=true";
+static char *font = "monospace:pixelsize=14:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"NotoColorEmoji:size=8:antialias=true:autohint=true",
+	"NotoColorEmoji:pixelsize=14:antialias=true:autohint=true",
 };
 
 static int borderpx = 2;
@@ -104,42 +104,41 @@ float alpha = 1.0;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
         /* 8 normal colors */
-	"#282828", /* #282828 for normal colors, #1d2021 for contrast. */
-	"#cc241d",
-	"#98971a",
-	"#ff8700",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
+	"#1c1f24",
+	"#ff6c6b",
+	"#98be65",
+	"#da8548",
+	"#51afef",
+	"#c678dd",
+	"#5699af",
+	"#202328",
 
         /* 8 bright colors */
-	"#1d2021",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
+	"#5b6268",
+	"#da8548",
+	"#4db5bd",
+	"#ecbe7b",
+	"#3071db",
+	"#a9a1e1",
+	"#46d9ff",
+	"#dfdfdf",
 
         [255] = 0,
 
         /* more colors can be added after 255 to use with DefaultXX */
-        "#008080", /* 256 -> cursor */
-	"#555555", /* 257 -> rev cursor*/
-	"#ebdbb2", /* 258 -> fg */
-	"#1d2021", /* 259 -> bg */
+	"#282c34",
+	"#bbc2cf",
+	"#d7d7d7",
 };
 
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 258;
-unsigned int defaultbg = 259;
-unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
+unsigned int defaultfg = 257;
+unsigned int defaultbg = 256;
+unsigned int defaultcs = 15;
+static unsigned int defaultrcs = 15;
 
 /*
  * Default shape of cursor
@@ -176,44 +175,6 @@ static unsigned int defaultattr = 11;
  * modifier, set to 0 to not use it.
  */
 static uint forcemousemod = ShiftMask;
-
-/*
- * Xresources preferences to load at startup
- */
-ResourcePref resources[] = {
-		{ "font",         STRING,  &font },
-		{ "color0",       STRING,  &colorname[0] },
-		{ "color1",       STRING,  &colorname[1] },
-		{ "color2",       STRING,  &colorname[2] },
-		{ "color3",       STRING,  &colorname[3] },
-		{ "color4",       STRING,  &colorname[4] },
-		{ "color5",       STRING,  &colorname[5] },
-		{ "color6",       STRING,  &colorname[6] },
-		{ "color7",       STRING,  &colorname[7] },
-		{ "color8",       STRING,  &colorname[8] },
-		{ "color9",       STRING,  &colorname[9] },
-		{ "color10",      STRING,  &colorname[10] },
-		{ "color11",      STRING,  &colorname[11] },
-		{ "color12",      STRING,  &colorname[12] },
-		{ "color13",      STRING,  &colorname[13] },
-		{ "color14",      STRING,  &colorname[14] },
-		{ "color15",      STRING,  &colorname[15] },
-		{ "cursorColor",  STRING,  &colorname[256] },
-		{ "foreground",   STRING,  &colorname[258] },
-		{ "background",   STRING,  &colorname[259] },
-		{ "termname",     STRING,  &termname },
-		{ "shell",        STRING,  &shell },
-		{ "minlatency",   INTEGER, &minlatency },
-		{ "maxlatency",   INTEGER, &maxlatency },
-		{ "blinktimeout", INTEGER, &blinktimeout },
-		{ "bellvolume",   INTEGER, &bellvolume },
-		{ "tabspaces",    INTEGER, &tabspaces },
-		{ "borderpx",     INTEGER, &borderpx },
-		{ "cwscale",      FLOAT,   &cwscale },
-		{ "chscale",      FLOAT,   &chscale },
-		{ "alpha",        FLOAT,   &alpha },
-		{ "borderpx",     INTEGER, &borderpx },
-};
 
 /*
  * Internal mouse shortcuts.

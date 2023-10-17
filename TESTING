@@ -1,0 +1,586 @@
+In file included from x.c:65:
+config.h:183:1: error: unknown type name 'ResourcePref'
+  183 | ResourcePref resources[] = {
+      | ^~~~~~~~~~~~
+config.h:184:17: warning: braces around scalar initializer
+  184 |                 { "font",         STRING,  &font },
+      |                 ^
+config.h:184:17: note: (near initialization for 'resources[0]')
+config.h:184:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  184 |                 { "font",         STRING,  &font },
+      |                   ^~~~~~
+config.h:184:19: note: (near initialization for 'resources[0]')
+config.h:184:19: error: initializer element is not computable at load time
+config.h:184:19: note: (near initialization for 'resources[0]')
+config.h:184:35: error: 'STRING' undeclared here (not in a function); did you mean 'XA_STRING'?
+  184 |                 { "font",         STRING,  &font },
+      |                                   ^~~~~~
+      |                                   XA_STRING
+config.h:184:35: warning: excess elements in scalar initializer
+config.h:184:35: note: (near initialization for 'resources[0]')
+config.h:184:44: warning: excess elements in scalar initializer
+  184 |                 { "font",         STRING,  &font },
+      |                                            ^
+config.h:184:44: note: (near initialization for 'resources[0]')
+config.h:185:17: warning: braces around scalar initializer
+  185 |                 { "color0",       STRING,  &colorname[0] },
+      |                 ^
+config.h:185:17: note: (near initialization for 'resources[1]')
+config.h:185:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  185 |                 { "color0",       STRING,  &colorname[0] },
+      |                   ^~~~~~~~
+config.h:185:19: note: (near initialization for 'resources[1]')
+config.h:185:19: error: initializer element is not computable at load time
+config.h:185:19: note: (near initialization for 'resources[1]')
+config.h:185:35: warning: excess elements in scalar initializer
+  185 |                 { "color0",       STRING,  &colorname[0] },
+      |                                   ^~~~~~
+config.h:185:35: note: (near initialization for 'resources[1]')
+config.h:185:44: warning: excess elements in scalar initializer
+  185 |                 { "color0",       STRING,  &colorname[0] },
+      |                                            ^
+config.h:185:44: note: (near initialization for 'resources[1]')
+config.h:186:17: warning: braces around scalar initializer
+  186 |                 { "color1",       STRING,  &colorname[1] },
+      |                 ^
+config.h:186:17: note: (near initialization for 'resources[2]')
+config.h:186:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  186 |                 { "color1",       STRING,  &colorname[1] },
+      |                   ^~~~~~~~
+config.h:186:19: note: (near initialization for 'resources[2]')
+config.h:186:19: error: initializer element is not computable at load time
+config.h:186:19: note: (near initialization for 'resources[2]')
+config.h:186:35: warning: excess elements in scalar initializer
+  186 |                 { "color1",       STRING,  &colorname[1] },
+      |                                   ^~~~~~
+config.h:186:35: note: (near initialization for 'resources[2]')
+config.h:186:44: warning: excess elements in scalar initializer
+  186 |                 { "color1",       STRING,  &colorname[1] },
+      |                                            ^
+config.h:186:44: note: (near initialization for 'resources[2]')
+config.h:187:17: warning: braces around scalar initializer
+  187 |                 { "color2",       STRING,  &colorname[2] },
+      |                 ^
+config.h:187:17: note: (near initialization for 'resources[3]')
+config.h:187:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  187 |                 { "color2",       STRING,  &colorname[2] },
+      |                   ^~~~~~~~
+config.h:187:19: note: (near initialization for 'resources[3]')
+config.h:187:19: error: initializer element is not computable at load time
+config.h:187:19: note: (near initialization for 'resources[3]')
+config.h:187:35: warning: excess elements in scalar initializer
+  187 |                 { "color2",       STRING,  &colorname[2] },
+      |                                   ^~~~~~
+config.h:187:35: note: (near initialization for 'resources[3]')
+config.h:187:44: warning: excess elements in scalar initializer
+  187 |                 { "color2",       STRING,  &colorname[2] },
+      |                                            ^
+config.h:187:44: note: (near initialization for 'resources[3]')
+config.h:188:17: warning: braces around scalar initializer
+  188 |                 { "color3",       STRING,  &colorname[3] },
+      |                 ^
+config.h:188:17: note: (near initialization for 'resources[4]')
+config.h:188:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  188 |                 { "color3",       STRING,  &colorname[3] },
+      |                   ^~~~~~~~
+config.h:188:19: note: (near initialization for 'resources[4]')
+config.h:188:19: error: initializer element is not computable at load time
+config.h:188:19: note: (near initialization for 'resources[4]')
+config.h:188:35: warning: excess elements in scalar initializer
+  188 |                 { "color3",       STRING,  &colorname[3] },
+      |                                   ^~~~~~
+config.h:188:35: note: (near initialization for 'resources[4]')
+config.h:188:44: warning: excess elements in scalar initializer
+  188 |                 { "color3",       STRING,  &colorname[3] },
+      |                                            ^
+config.h:188:44: note: (near initialization for 'resources[4]')
+config.h:189:17: warning: braces around scalar initializer
+  189 |                 { "color4",       STRING,  &colorname[4] },
+      |                 ^
+config.h:189:17: note: (near initialization for 'resources[5]')
+config.h:189:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  189 |                 { "color4",       STRING,  &colorname[4] },
+      |                   ^~~~~~~~
+config.h:189:19: note: (near initialization for 'resources[5]')
+config.h:189:19: error: initializer element is not computable at load time
+config.h:189:19: note: (near initialization for 'resources[5]')
+config.h:189:35: warning: excess elements in scalar initializer
+  189 |                 { "color4",       STRING,  &colorname[4] },
+      |                                   ^~~~~~
+config.h:189:35: note: (near initialization for 'resources[5]')
+config.h:189:44: warning: excess elements in scalar initializer
+  189 |                 { "color4",       STRING,  &colorname[4] },
+      |                                            ^
+config.h:189:44: note: (near initialization for 'resources[5]')
+config.h:190:17: warning: braces around scalar initializer
+  190 |                 { "color5",       STRING,  &colorname[5] },
+      |                 ^
+config.h:190:17: note: (near initialization for 'resources[6]')
+config.h:190:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  190 |                 { "color5",       STRING,  &colorname[5] },
+      |                   ^~~~~~~~
+config.h:190:19: note: (near initialization for 'resources[6]')
+config.h:190:19: error: initializer element is not computable at load time
+config.h:190:19: note: (near initialization for 'resources[6]')
+config.h:190:35: warning: excess elements in scalar initializer
+  190 |                 { "color5",       STRING,  &colorname[5] },
+      |                                   ^~~~~~
+config.h:190:35: note: (near initialization for 'resources[6]')
+config.h:190:44: warning: excess elements in scalar initializer
+  190 |                 { "color5",       STRING,  &colorname[5] },
+      |                                            ^
+config.h:190:44: note: (near initialization for 'resources[6]')
+config.h:191:17: warning: braces around scalar initializer
+  191 |                 { "color6",       STRING,  &colorname[6] },
+      |                 ^
+config.h:191:17: note: (near initialization for 'resources[7]')
+config.h:191:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  191 |                 { "color6",       STRING,  &colorname[6] },
+      |                   ^~~~~~~~
+config.h:191:19: note: (near initialization for 'resources[7]')
+config.h:191:19: error: initializer element is not computable at load time
+config.h:191:19: note: (near initialization for 'resources[7]')
+config.h:191:35: warning: excess elements in scalar initializer
+  191 |                 { "color6",       STRING,  &colorname[6] },
+      |                                   ^~~~~~
+config.h:191:35: note: (near initialization for 'resources[7]')
+config.h:191:44: warning: excess elements in scalar initializer
+  191 |                 { "color6",       STRING,  &colorname[6] },
+      |                                            ^
+config.h:191:44: note: (near initialization for 'resources[7]')
+config.h:192:17: warning: braces around scalar initializer
+  192 |                 { "color7",       STRING,  &colorname[7] },
+      |                 ^
+config.h:192:17: note: (near initialization for 'resources[8]')
+config.h:192:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  192 |                 { "color7",       STRING,  &colorname[7] },
+      |                   ^~~~~~~~
+config.h:192:19: note: (near initialization for 'resources[8]')
+config.h:192:19: error: initializer element is not computable at load time
+config.h:192:19: note: (near initialization for 'resources[8]')
+config.h:192:35: warning: excess elements in scalar initializer
+  192 |                 { "color7",       STRING,  &colorname[7] },
+      |                                   ^~~~~~
+config.h:192:35: note: (near initialization for 'resources[8]')
+config.h:192:44: warning: excess elements in scalar initializer
+  192 |                 { "color7",       STRING,  &colorname[7] },
+      |                                            ^
+config.h:192:44: note: (near initialization for 'resources[8]')
+config.h:193:17: warning: braces around scalar initializer
+  193 |                 { "color8",       STRING,  &colorname[8] },
+      |                 ^
+config.h:193:17: note: (near initialization for 'resources[9]')
+config.h:193:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  193 |                 { "color8",       STRING,  &colorname[8] },
+      |                   ^~~~~~~~
+config.h:193:19: note: (near initialization for 'resources[9]')
+config.h:193:19: error: initializer element is not computable at load time
+config.h:193:19: note: (near initialization for 'resources[9]')
+config.h:193:35: warning: excess elements in scalar initializer
+  193 |                 { "color8",       STRING,  &colorname[8] },
+      |                                   ^~~~~~
+config.h:193:35: note: (near initialization for 'resources[9]')
+config.h:193:44: warning: excess elements in scalar initializer
+  193 |                 { "color8",       STRING,  &colorname[8] },
+      |                                            ^
+config.h:193:44: note: (near initialization for 'resources[9]')
+config.h:194:17: warning: braces around scalar initializer
+  194 |                 { "color9",       STRING,  &colorname[9] },
+      |                 ^
+config.h:194:17: note: (near initialization for 'resources[10]')
+config.h:194:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  194 |                 { "color9",       STRING,  &colorname[9] },
+      |                   ^~~~~~~~
+config.h:194:19: note: (near initialization for 'resources[10]')
+config.h:194:19: error: initializer element is not computable at load time
+config.h:194:19: note: (near initialization for 'resources[10]')
+config.h:194:35: warning: excess elements in scalar initializer
+  194 |                 { "color9",       STRING,  &colorname[9] },
+      |                                   ^~~~~~
+config.h:194:35: note: (near initialization for 'resources[10]')
+config.h:194:44: warning: excess elements in scalar initializer
+  194 |                 { "color9",       STRING,  &colorname[9] },
+      |                                            ^
+config.h:194:44: note: (near initialization for 'resources[10]')
+config.h:195:17: warning: braces around scalar initializer
+  195 |                 { "color10",      STRING,  &colorname[10] },
+      |                 ^
+config.h:195:17: note: (near initialization for 'resources[11]')
+config.h:195:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  195 |                 { "color10",      STRING,  &colorname[10] },
+      |                   ^~~~~~~~~
+config.h:195:19: note: (near initialization for 'resources[11]')
+config.h:195:19: error: initializer element is not computable at load time
+config.h:195:19: note: (near initialization for 'resources[11]')
+config.h:195:35: warning: excess elements in scalar initializer
+  195 |                 { "color10",      STRING,  &colorname[10] },
+      |                                   ^~~~~~
+config.h:195:35: note: (near initialization for 'resources[11]')
+config.h:195:44: warning: excess elements in scalar initializer
+  195 |                 { "color10",      STRING,  &colorname[10] },
+      |                                            ^
+config.h:195:44: note: (near initialization for 'resources[11]')
+config.h:196:17: warning: braces around scalar initializer
+  196 |                 { "color11",      STRING,  &colorname[11] },
+      |                 ^
+config.h:196:17: note: (near initialization for 'resources[12]')
+config.h:196:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  196 |                 { "color11",      STRING,  &colorname[11] },
+      |                   ^~~~~~~~~
+config.h:196:19: note: (near initialization for 'resources[12]')
+config.h:196:19: error: initializer element is not computable at load time
+config.h:196:19: note: (near initialization for 'resources[12]')
+config.h:196:35: warning: excess elements in scalar initializer
+  196 |                 { "color11",      STRING,  &colorname[11] },
+      |                                   ^~~~~~
+config.h:196:35: note: (near initialization for 'resources[12]')
+config.h:196:44: warning: excess elements in scalar initializer
+  196 |                 { "color11",      STRING,  &colorname[11] },
+      |                                            ^
+config.h:196:44: note: (near initialization for 'resources[12]')
+config.h:197:17: warning: braces around scalar initializer
+  197 |                 { "color12",      STRING,  &colorname[12] },
+      |                 ^
+config.h:197:17: note: (near initialization for 'resources[13]')
+config.h:197:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  197 |                 { "color12",      STRING,  &colorname[12] },
+      |                   ^~~~~~~~~
+config.h:197:19: note: (near initialization for 'resources[13]')
+config.h:197:19: error: initializer element is not computable at load time
+config.h:197:19: note: (near initialization for 'resources[13]')
+config.h:197:35: warning: excess elements in scalar initializer
+  197 |                 { "color12",      STRING,  &colorname[12] },
+      |                                   ^~~~~~
+config.h:197:35: note: (near initialization for 'resources[13]')
+config.h:197:44: warning: excess elements in scalar initializer
+  197 |                 { "color12",      STRING,  &colorname[12] },
+      |                                            ^
+config.h:197:44: note: (near initialization for 'resources[13]')
+config.h:198:17: warning: braces around scalar initializer
+  198 |                 { "color13",      STRING,  &colorname[13] },
+      |                 ^
+config.h:198:17: note: (near initialization for 'resources[14]')
+config.h:198:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  198 |                 { "color13",      STRING,  &colorname[13] },
+      |                   ^~~~~~~~~
+config.h:198:19: note: (near initialization for 'resources[14]')
+config.h:198:19: error: initializer element is not computable at load time
+config.h:198:19: note: (near initialization for 'resources[14]')
+config.h:198:35: warning: excess elements in scalar initializer
+  198 |                 { "color13",      STRING,  &colorname[13] },
+      |                                   ^~~~~~
+config.h:198:35: note: (near initialization for 'resources[14]')
+config.h:198:44: warning: excess elements in scalar initializer
+  198 |                 { "color13",      STRING,  &colorname[13] },
+      |                                            ^
+config.h:198:44: note: (near initialization for 'resources[14]')
+config.h:199:17: warning: braces around scalar initializer
+  199 |                 { "color14",      STRING,  &colorname[14] },
+      |                 ^
+config.h:199:17: note: (near initialization for 'resources[15]')
+config.h:199:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  199 |                 { "color14",      STRING,  &colorname[14] },
+      |                   ^~~~~~~~~
+config.h:199:19: note: (near initialization for 'resources[15]')
+config.h:199:19: error: initializer element is not computable at load time
+config.h:199:19: note: (near initialization for 'resources[15]')
+config.h:199:35: warning: excess elements in scalar initializer
+  199 |                 { "color14",      STRING,  &colorname[14] },
+      |                                   ^~~~~~
+config.h:199:35: note: (near initialization for 'resources[15]')
+config.h:199:44: warning: excess elements in scalar initializer
+  199 |                 { "color14",      STRING,  &colorname[14] },
+      |                                            ^
+config.h:199:44: note: (near initialization for 'resources[15]')
+config.h:200:17: warning: braces around scalar initializer
+  200 |                 { "color15",      STRING,  &colorname[15] },
+      |                 ^
+config.h:200:17: note: (near initialization for 'resources[16]')
+config.h:200:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  200 |                 { "color15",      STRING,  &colorname[15] },
+      |                   ^~~~~~~~~
+config.h:200:19: note: (near initialization for 'resources[16]')
+config.h:200:19: error: initializer element is not computable at load time
+config.h:200:19: note: (near initialization for 'resources[16]')
+config.h:200:35: warning: excess elements in scalar initializer
+  200 |                 { "color15",      STRING,  &colorname[15] },
+      |                                   ^~~~~~
+config.h:200:35: note: (near initialization for 'resources[16]')
+config.h:200:44: warning: excess elements in scalar initializer
+  200 |                 { "color15",      STRING,  &colorname[15] },
+      |                                            ^
+config.h:200:44: note: (near initialization for 'resources[16]')
+config.h:201:17: warning: braces around scalar initializer
+  201 |                 { "cursorColor",  STRING,  &colorname[256] },
+      |                 ^
+config.h:201:17: note: (near initialization for 'resources[17]')
+config.h:201:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  201 |                 { "cursorColor",  STRING,  &colorname[256] },
+      |                   ^~~~~~~~~~~~~
+config.h:201:19: note: (near initialization for 'resources[17]')
+config.h:201:19: error: initializer element is not computable at load time
+config.h:201:19: note: (near initialization for 'resources[17]')
+config.h:201:35: warning: excess elements in scalar initializer
+  201 |                 { "cursorColor",  STRING,  &colorname[256] },
+      |                                   ^~~~~~
+config.h:201:35: note: (near initialization for 'resources[17]')
+config.h:201:44: warning: excess elements in scalar initializer
+  201 |                 { "cursorColor",  STRING,  &colorname[256] },
+      |                                            ^
+config.h:201:44: note: (near initialization for 'resources[17]')
+config.h:202:17: warning: braces around scalar initializer
+  202 |                 { "foreground",   STRING,  &colorname[258] },
+      |                 ^
+config.h:202:17: note: (near initialization for 'resources[18]')
+config.h:202:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  202 |                 { "foreground",   STRING,  &colorname[258] },
+      |                   ^~~~~~~~~~~~
+config.h:202:19: note: (near initialization for 'resources[18]')
+config.h:202:19: error: initializer element is not computable at load time
+config.h:202:19: note: (near initialization for 'resources[18]')
+config.h:202:35: warning: excess elements in scalar initializer
+  202 |                 { "foreground",   STRING,  &colorname[258] },
+      |                                   ^~~~~~
+config.h:202:35: note: (near initialization for 'resources[18]')
+config.h:202:44: warning: excess elements in scalar initializer
+  202 |                 { "foreground",   STRING,  &colorname[258] },
+      |                                            ^
+config.h:202:44: note: (near initialization for 'resources[18]')
+config.h:203:17: warning: braces around scalar initializer
+  203 |                 { "background",   STRING,  &colorname[259] },
+      |                 ^
+config.h:203:17: note: (near initialization for 'resources[19]')
+config.h:203:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  203 |                 { "background",   STRING,  &colorname[259] },
+      |                   ^~~~~~~~~~~~
+config.h:203:19: note: (near initialization for 'resources[19]')
+config.h:203:19: error: initializer element is not computable at load time
+config.h:203:19: note: (near initialization for 'resources[19]')
+config.h:203:35: warning: excess elements in scalar initializer
+  203 |                 { "background",   STRING,  &colorname[259] },
+      |                                   ^~~~~~
+config.h:203:35: note: (near initialization for 'resources[19]')
+config.h:203:44: warning: excess elements in scalar initializer
+  203 |                 { "background",   STRING,  &colorname[259] },
+      |                                            ^
+config.h:203:44: note: (near initialization for 'resources[19]')
+config.h:204:17: warning: braces around scalar initializer
+  204 |                 { "termname",     STRING,  &termname },
+      |                 ^
+config.h:204:17: note: (near initialization for 'resources[20]')
+config.h:204:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  204 |                 { "termname",     STRING,  &termname },
+      |                   ^~~~~~~~~~
+config.h:204:19: note: (near initialization for 'resources[20]')
+config.h:204:19: error: initializer element is not computable at load time
+config.h:204:19: note: (near initialization for 'resources[20]')
+config.h:204:35: warning: excess elements in scalar initializer
+  204 |                 { "termname",     STRING,  &termname },
+      |                                   ^~~~~~
+config.h:204:35: note: (near initialization for 'resources[20]')
+config.h:204:44: warning: excess elements in scalar initializer
+  204 |                 { "termname",     STRING,  &termname },
+      |                                            ^
+config.h:204:44: note: (near initialization for 'resources[20]')
+config.h:205:17: warning: braces around scalar initializer
+  205 |                 { "shell",        STRING,  &shell },
+      |                 ^
+config.h:205:17: note: (near initialization for 'resources[21]')
+config.h:205:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  205 |                 { "shell",        STRING,  &shell },
+      |                   ^~~~~~~
+config.h:205:19: note: (near initialization for 'resources[21]')
+config.h:205:19: error: initializer element is not computable at load time
+config.h:205:19: note: (near initialization for 'resources[21]')
+config.h:205:35: warning: excess elements in scalar initializer
+  205 |                 { "shell",        STRING,  &shell },
+      |                                   ^~~~~~
+config.h:205:35: note: (near initialization for 'resources[21]')
+config.h:205:44: warning: excess elements in scalar initializer
+  205 |                 { "shell",        STRING,  &shell },
+      |                                            ^
+config.h:205:44: note: (near initialization for 'resources[21]')
+config.h:206:17: warning: braces around scalar initializer
+  206 |                 { "minlatency",   INTEGER, &minlatency },
+      |                 ^
+config.h:206:17: note: (near initialization for 'resources[22]')
+config.h:206:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  206 |                 { "minlatency",   INTEGER, &minlatency },
+      |                   ^~~~~~~~~~~~
+config.h:206:19: note: (near initialization for 'resources[22]')
+config.h:206:19: error: initializer element is not computable at load time
+config.h:206:19: note: (near initialization for 'resources[22]')
+config.h:206:35: error: 'INTEGER' undeclared here (not in a function); did you mean 'XA_INTEGER'?
+  206 |                 { "minlatency",   INTEGER, &minlatency },
+      |                                   ^~~~~~~
+      |                                   XA_INTEGER
+config.h:206:35: warning: excess elements in scalar initializer
+config.h:206:35: note: (near initialization for 'resources[22]')
+config.h:206:44: warning: excess elements in scalar initializer
+  206 |                 { "minlatency",   INTEGER, &minlatency },
+      |                                            ^
+config.h:206:44: note: (near initialization for 'resources[22]')
+config.h:207:17: warning: braces around scalar initializer
+  207 |                 { "maxlatency",   INTEGER, &maxlatency },
+      |                 ^
+config.h:207:17: note: (near initialization for 'resources[23]')
+config.h:207:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  207 |                 { "maxlatency",   INTEGER, &maxlatency },
+      |                   ^~~~~~~~~~~~
+config.h:207:19: note: (near initialization for 'resources[23]')
+config.h:207:19: error: initializer element is not computable at load time
+config.h:207:19: note: (near initialization for 'resources[23]')
+config.h:207:35: warning: excess elements in scalar initializer
+  207 |                 { "maxlatency",   INTEGER, &maxlatency },
+      |                                   ^~~~~~~
+config.h:207:35: note: (near initialization for 'resources[23]')
+config.h:207:44: warning: excess elements in scalar initializer
+  207 |                 { "maxlatency",   INTEGER, &maxlatency },
+      |                                            ^
+config.h:207:44: note: (near initialization for 'resources[23]')
+config.h:208:17: warning: braces around scalar initializer
+  208 |                 { "blinktimeout", INTEGER, &blinktimeout },
+      |                 ^
+config.h:208:17: note: (near initialization for 'resources[24]')
+config.h:208:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  208 |                 { "blinktimeout", INTEGER, &blinktimeout },
+      |                   ^~~~~~~~~~~~~~
+config.h:208:19: note: (near initialization for 'resources[24]')
+config.h:208:19: error: initializer element is not computable at load time
+config.h:208:19: note: (near initialization for 'resources[24]')
+config.h:208:35: warning: excess elements in scalar initializer
+  208 |                 { "blinktimeout", INTEGER, &blinktimeout },
+      |                                   ^~~~~~~
+config.h:208:35: note: (near initialization for 'resources[24]')
+config.h:208:44: warning: excess elements in scalar initializer
+  208 |                 { "blinktimeout", INTEGER, &blinktimeout },
+      |                                            ^
+config.h:208:44: note: (near initialization for 'resources[24]')
+config.h:209:17: warning: braces around scalar initializer
+  209 |                 { "bellvolume",   INTEGER, &bellvolume },
+      |                 ^
+config.h:209:17: note: (near initialization for 'resources[25]')
+config.h:209:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  209 |                 { "bellvolume",   INTEGER, &bellvolume },
+      |                   ^~~~~~~~~~~~
+config.h:209:19: note: (near initialization for 'resources[25]')
+config.h:209:19: error: initializer element is not computable at load time
+config.h:209:19: note: (near initialization for 'resources[25]')
+config.h:209:35: warning: excess elements in scalar initializer
+  209 |                 { "bellvolume",   INTEGER, &bellvolume },
+      |                                   ^~~~~~~
+config.h:209:35: note: (near initialization for 'resources[25]')
+config.h:209:44: warning: excess elements in scalar initializer
+  209 |                 { "bellvolume",   INTEGER, &bellvolume },
+      |                                            ^
+config.h:209:44: note: (near initialization for 'resources[25]')
+config.h:210:17: warning: braces around scalar initializer
+  210 |                 { "tabspaces",    INTEGER, &tabspaces },
+      |                 ^
+config.h:210:17: note: (near initialization for 'resources[26]')
+config.h:210:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  210 |                 { "tabspaces",    INTEGER, &tabspaces },
+      |                   ^~~~~~~~~~~
+config.h:210:19: note: (near initialization for 'resources[26]')
+config.h:210:19: error: initializer element is not computable at load time
+config.h:210:19: note: (near initialization for 'resources[26]')
+config.h:210:35: warning: excess elements in scalar initializer
+  210 |                 { "tabspaces",    INTEGER, &tabspaces },
+      |                                   ^~~~~~~
+config.h:210:35: note: (near initialization for 'resources[26]')
+config.h:210:44: warning: excess elements in scalar initializer
+  210 |                 { "tabspaces",    INTEGER, &tabspaces },
+      |                                            ^
+config.h:210:44: note: (near initialization for 'resources[26]')
+config.h:211:17: warning: braces around scalar initializer
+  211 |                 { "borderpx",     INTEGER, &borderpx },
+      |                 ^
+config.h:211:17: note: (near initialization for 'resources[27]')
+config.h:211:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  211 |                 { "borderpx",     INTEGER, &borderpx },
+      |                   ^~~~~~~~~~
+config.h:211:19: note: (near initialization for 'resources[27]')
+config.h:211:19: error: initializer element is not computable at load time
+config.h:211:19: note: (near initialization for 'resources[27]')
+config.h:211:35: warning: excess elements in scalar initializer
+  211 |                 { "borderpx",     INTEGER, &borderpx },
+      |                                   ^~~~~~~
+config.h:211:35: note: (near initialization for 'resources[27]')
+config.h:211:44: warning: excess elements in scalar initializer
+  211 |                 { "borderpx",     INTEGER, &borderpx },
+      |                                            ^
+config.h:211:44: note: (near initialization for 'resources[27]')
+config.h:212:17: warning: braces around scalar initializer
+  212 |                 { "cwscale",      FLOAT,   &cwscale },
+      |                 ^
+config.h:212:17: note: (near initialization for 'resources[28]')
+config.h:212:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  212 |                 { "cwscale",      FLOAT,   &cwscale },
+      |                   ^~~~~~~~~
+config.h:212:19: note: (near initialization for 'resources[28]')
+config.h:212:19: error: initializer element is not computable at load time
+config.h:212:19: note: (near initialization for 'resources[28]')
+config.h:212:35: error: 'FLOAT' undeclared here (not in a function)
+  212 |                 { "cwscale",      FLOAT,   &cwscale },
+      |                                   ^~~~~
+config.h:212:35: warning: excess elements in scalar initializer
+config.h:212:35: note: (near initialization for 'resources[28]')
+config.h:212:44: warning: excess elements in scalar initializer
+  212 |                 { "cwscale",      FLOAT,   &cwscale },
+      |                                            ^
+config.h:212:44: note: (near initialization for 'resources[28]')
+config.h:213:17: warning: braces around scalar initializer
+  213 |                 { "chscale",      FLOAT,   &chscale },
+      |                 ^
+config.h:213:17: note: (near initialization for 'resources[29]')
+config.h:213:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  213 |                 { "chscale",      FLOAT,   &chscale },
+      |                   ^~~~~~~~~
+config.h:213:19: note: (near initialization for 'resources[29]')
+config.h:213:19: error: initializer element is not computable at load time
+config.h:213:19: note: (near initialization for 'resources[29]')
+config.h:213:35: warning: excess elements in scalar initializer
+  213 |                 { "chscale",      FLOAT,   &chscale },
+      |                                   ^~~~~
+config.h:213:35: note: (near initialization for 'resources[29]')
+config.h:213:44: warning: excess elements in scalar initializer
+  213 |                 { "chscale",      FLOAT,   &chscale },
+      |                                            ^
+config.h:213:44: note: (near initialization for 'resources[29]')
+config.h:214:17: warning: braces around scalar initializer
+  214 |                 { "alpha",        FLOAT,   &alpha },
+      |                 ^
+config.h:214:17: note: (near initialization for 'resources[30]')
+config.h:214:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  214 |                 { "alpha",        FLOAT,   &alpha },
+      |                   ^~~~~~~
+config.h:214:19: note: (near initialization for 'resources[30]')
+config.h:214:19: error: initializer element is not computable at load time
+config.h:214:19: note: (near initialization for 'resources[30]')
+config.h:214:35: warning: excess elements in scalar initializer
+  214 |                 { "alpha",        FLOAT,   &alpha },
+      |                                   ^~~~~
+config.h:214:35: note: (near initialization for 'resources[30]')
+config.h:214:44: warning: excess elements in scalar initializer
+  214 |                 { "alpha",        FLOAT,   &alpha },
+      |                                            ^
+config.h:214:44: note: (near initialization for 'resources[30]')
+config.h:215:17: warning: braces around scalar initializer
+  215 |                 { "borderpx",     INTEGER, &borderpx },
+      |                 ^
+config.h:215:17: note: (near initialization for 'resources[31]')
+config.h:215:19: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+  215 |                 { "borderpx",     INTEGER, &borderpx },
+      |                   ^~~~~~~~~~
+config.h:215:19: note: (near initialization for 'resources[31]')
+config.h:215:19: error: initializer element is not computable at load time
+config.h:215:19: note: (near initialization for 'resources[31]')
+config.h:215:35: warning: excess elements in scalar initializer
+  215 |                 { "borderpx",     INTEGER, &borderpx },
+      |                                   ^~~~~~~
+config.h:215:35: note: (near initialization for 'resources[31]')
+config.h:215:44: warning: excess elements in scalar initializer
+  215 |                 { "borderpx",     INTEGER, &borderpx },
+      |                                            ^
+config.h:215:44: note: (near initialization for 'resources[31]')
+make: *** [Makefile:16: x.o] Error 1
