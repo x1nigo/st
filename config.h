@@ -5,10 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:pixelsize=14:antialias=true:autohint=true";
+static char *font = "monospace:size=10:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"NotoColorEmoji:pixelsize=14:antialias=true:autohint=true",
+	"NotoColorEmoji:size=8:antialias=true:autohint=true",
 };
 
 static int borderpx = 2;
@@ -111,7 +111,7 @@ static const char *colorname[] = {
 	"#51afef",
 	"#c678dd",
 	"#5699af",
-	"#202328",
+	"#d7d7d7",
 
         /* 8 bright colors */
 	"#5b6268",
