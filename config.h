@@ -104,24 +104,24 @@ float alpha = .8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
         /* 8 normal colors */
-	"#2C2C2C",
-	"#CC231C",
-	"#689D69",
-	"#D79922",
-	"#366B71",
-	"#4E5165",
+	"#2c2c2c",
+	"#cc231c",
+	"#689d69",
+	"#d79922",
+	"#366b71",
+	"#4e5165",
 	"#458587",
-	"#C8BB97",
+	"#c8bb97",
 
         /* 8 bright colors */
 	"#777777",
-	"#CC231C",
-	"#689D69",
-	"#D79922",
-	"#366B71",
-	"#4E5165",
+	"#cc231c",
+	"#689d69",
+	"#d79922",
+	"#366b71",
+	"#4e5165",
 	"#458587",
-	"#C8BB97",
+	"#c8bb97",
 
         [255] = 0,
 
@@ -147,7 +147,7 @@ static unsigned int defaultrcs = 258;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
