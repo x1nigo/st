@@ -99,7 +99,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 1.0;
+float alpha = 0.85;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -129,7 +129,7 @@ static const char *colorname[] = {
         /* more colors can be added after 255 to use with DefaultXX */
 	"#1d2021", /* default bg */
 	"#d7d7d7", /* default fg */
-	"#9fdbf0", /* default cs */
+	"#3071db", /* default cs */
 };
 
 /*
@@ -148,7 +148,7 @@ static unsigned int defaultrcs = 258;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 6;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
