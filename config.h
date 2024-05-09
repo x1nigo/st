@@ -8,7 +8,7 @@
 static char *font = "monospace:size=10:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"NotoColorEmoji:size=8:antialias=true:autohint=true",
+	"NotoMono Nerd Font:size=10:antialias=true:autohint=true"
 };
 
 static int borderpx = 2;
@@ -58,7 +58,7 @@ int allowwindowops = 0;
  * near minlatency, but it waits longer for slow updates to avoid partial draw.
  * low minlatency will tear/flicker more, as it can "detect" idle too early.
  */
-static double minlatency = 8;
+static double minlatency = 2;
 static double maxlatency = 33;
 
 /*
@@ -99,7 +99,10 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = .85;
+float alpha = 0.8;
+
+/* Background opacity */
+float alpha_def;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
@@ -130,6 +133,7 @@ static const char *colorname[] = {
 	"#d7d7d7", /* default fg */
 	"#000088", /* default cs */
 };
+
 
 /*
  * Default colors (colorname index)
@@ -244,10 +248,11 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} },
-	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
-	{ MODKEY,		XK_s,		changealpha,	{.f = -0.05} },
-	{ MODKEY,		XK_a,		changealpha,	{.f = +0.05} },
+	{ MODKEY,               XK_s,           chgalpha,       {.f = -1} }, /* Decrease opacity */
+	{ MODKEY,               XK_a,           chgalpha,       {.f = +1} }, /* Increase opacity */
+	{ MODKEY,               XK_0,           chgalpha,       {.f =  0} }, /* Reset opacity */
+ 	{ MODKEY,               XK_k,           kscrollup,      {.i =  1} },
+ 	{ MODKEY,               XK_j,           kscrolldown,    {.i =  1} },
 };
 
 /*
