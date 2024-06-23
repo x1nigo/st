@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:bold:size=12:antialias=true:autohint=true";
+static char *font = "monospace:bold:size=10:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
 	"NotoColorEmoji:size=10:antialias=true:autohint=true"
@@ -107,31 +107,31 @@ float alpha_def;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
         /* 8 normal colors */
-	"#080808",
+	"#282828",
 	"#800000",
 	"#008000",
-	"#808000",
+	"#aa6000",
 	"#000080",
-	"#800080",
-	"#008080",
+	"#600080",
+	"#006080",
 	"#808080",
 
         /* 8 bright colors */
-	"#080808",
+	"#1d2021",
 	"#800000",
 	"#008000",
-	"#808000",
+	"#aa6000",
 	"#000080",
-	"#800080",
-	"#008080",
-	"#808080",
+	"#600080",
+	"#006080",
+	"#ebdbb2",
 
         [255] = 0,
 
         /* more colors can be added after 255 to use with DefaultXX */
-	"#080808", /* default bg */
-	"#808080", /* default fg */
-	"#808080", /* default cs */
+	"#121618", /* default bg */
+	"#ebdbb2", /* default fg */
+	"#ebdbb2", /* default cs */
 };
 
 
@@ -145,13 +145,19 @@ unsigned int defaultcs = 258;
 static unsigned int defaultrcs = 258;
 
 /*
- * Default shape of cursor
- * 2: Block ("█")
- * 4: Underline ("_")
- * 6: Bar ("|")
- * 7: Snowman ("☃")
+ * Default style of cursor
+ * 0: blinking block
+ * 1: blinking block (default)
+ * 2: steady block ("â–ˆ")
+ * 3: blinking underline
+ * 4: steady underline ("_")
+ * 5: blinking bar
+ * 6: steady bar ("|")
+ * 7: blinking st cursor
+ * 8: steady st cursor
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorstyle = 1;
+static Rune stcursor = 0x2603; /* snowman ("â˜ƒ") */
 
 /*
  * Default columns and rows numbers
