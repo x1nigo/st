@@ -5,7 +5,7 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:bold:size=10:antialias=true:autohint=true";
+static char *font = "monospace:size=10:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
 	"NotoColorEmoji:size=10:antialias=true:autohint=true"
@@ -106,29 +106,29 @@ float alpha_def;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-        /* 8 normal colors */
+	/* 8 normal colors */
 	"#282828",
 	"#800000",
-	"#008060",
-	"#da6000",
+	"#008000",
+	"#aa6000",
 	"#000080",
 	"#600080",
 	"#006080",
 	"#808080",
 
-        /* 8 bright colors */
+	/* 8 bright colors */
 	"#1d2021",
 	"#800000",
-	"#008060",
-	"#da6000",
+	"#008000",
+	"#aa6000",
 	"#000080",
 	"#600080",
 	"#006080",
 	"#ebdbb2",
 
-        [255] = 0,
+	[255] = 0,
 
-        /* more colors can be added after 255 to use with DefaultXX */
+	/* more colors can be added after 255 to use with DefaultXX */
 	"#121618", /* default bg */
 	"#ebdbb2", /* default fg */
 	"#ebdbb2", /* default cs */

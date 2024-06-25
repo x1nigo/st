@@ -272,7 +272,7 @@ static char *opt_name  = NULL;
 static char *opt_title = NULL;
 
 static uint buttons; /* bit field of pressed buttons */
-static int cursorblinks = 0;
+static int cursorblinks = 1;
 
 void
 clipcopy(const Arg *dummy)
