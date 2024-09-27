@@ -99,7 +99,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = .85;
+float alpha = 0.85;
 
 /* Background opacity */
 float alpha_def;
@@ -112,27 +112,27 @@ static const char *colorname[] = {
 	"#800000",
 	"#008060",
 	"#dc2800",
-	"#204085",
-	"#600080",
-	"#689d6a",
+	"#282880",
+	"#602080",
 	"#008dba",
+	"#ebdbb8",
 
 	/* 8 bright colors */
 	"#1d2021",
 	"#800000",
 	"#008060",
 	"#dc2800",
-	"#204085",
-	"#600080",
+	"#282880",
+	"#602080",
 	"#008dba",
-	"#ebdbb2",
+	"#ebdbb8",
 
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#161617", /* default bg */
-	"#ebdbb2", /* default fg */
-	"#ebdbb2", /* default cs */
+	"#ebdbb8", /* default fg */
+	"#ebdbb8", /* default cs */
 };
 
 
