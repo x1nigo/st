@@ -8,7 +8,7 @@
 static char *font = "monospace:size=10:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"NotoColorEmoji:size=10:antialias=true:autohint=true"
+	"NotoColorEmoji:size=8:antialias=true:autohint=true"
 };
 
 static int borderpx = 2;
@@ -99,7 +99,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.85;
 
 /* Background opacity */
 float alpha_def;
@@ -107,30 +107,28 @@ float alpha_def;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-
-	"#282828",
-	"#800000",
-	"#008060",
+	"#1d2021",
+	"#a42a2a",
+	"#2e8a57",
 	"#dc2800",
-	"#282880",
-	"#602080",
-	"#008dba",
-	"#ebdbb8",
+	"#005577",
+	"#6a0dac",
+	"#008a8a",
+	"#ebdbb2",
 
 	/* 8 bright colors */
-	"#1d2021",
-	"#800000",
-	"#008060",
+	"#282828",
+	"#a42a2a",
+	"#2e8a57",
 	"#dc2800",
-	"#282880",
-	"#602080",
-	"#008dba",
+	"#005577",
+	"#6a0dac",
+	"#008a8a",
 	"#ebdbb8",
-
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#161617", /* default bg */
+	"#1d2021", /* default bg */
 	"#ebdbb8", /* default fg */
 	"#ebdbb8", /* default cs */
 };
