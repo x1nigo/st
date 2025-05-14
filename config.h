@@ -108,22 +108,22 @@ float alpha_def;
 static const char *colorname[] = {
 	/* 8 normal colors */
 	"#1d2021",
-	"#a42a2a",
-	"#2e8a57",
+	"#d72828",
+	"#28d798",
 	"#dc2800",
 	"#005577",
 	"#6a0dac",
-	"#008a8a",
+	"#009fd7",
 	"#ebdbb2",
 
 	/* 8 bright colors */
 	"#282828",
-	"#a42a2a",
-	"#2e8a57",
+	"#d72828",
+	"#28d798",
 	"#dc2800",
 	"#005577",
 	"#6a0dac",
-	"#008a8a",
+	"#009fd7",
 	"#ebdbb8",
 	[255] = 0,
 
