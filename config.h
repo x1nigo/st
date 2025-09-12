@@ -8,8 +8,7 @@
 static char *font = "monospace:size=10:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-	"NotoColorEmoji:size=8:antialias=true:autohint=true",
-	"FontAwesome:size=8"
+	"NotoColorEmoji:size=8:antialias=true:autohint=true"
 };
 
 static int borderpx = 2;
@@ -100,7 +99,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.95;
+float alpha = 1.0;
 
 /* Background opacity */
 float alpha_def;
@@ -151,7 +150,7 @@ static unsigned int defaultrcs = 258;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
- static unsigned int cursorshape = 6;
+ static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
