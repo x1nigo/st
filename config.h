@@ -107,30 +107,30 @@ float alpha_def;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#1d2021",
-	"#d72828",
-	"#28d798",
-	"#dc2800",
+	"#1d2023",
+	"#f74747",
+	"#87d7a7",
+	"#ff8747",
 	"#005577",
-	"#6a0dac",
-	"#009fd7",
-	"#ebdbb2",
+	"#5757d7",
+	"#87d7f7",
+	"#d7d7d7",
 
 	/* 8 bright colors */
 	"#282828",
-	"#d72828",
-	"#28d798",
-	"#dc2800",
+	"#f74747",
+	"#87d7a7",
+	"#ff8747",
 	"#005577",
-	"#6a0dac",
-	"#009fd7",
-	"#ebdbb8",
+	"#5757d7",
+	"#87d7f7",
+	"#d7d7d7",
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#1d2021", /* default bg */
-	"#ebdbb8", /* default fg */
-	"#ebdbb8", /* default cs */
+	"#1d2023", /* default bg */
+	"#d7d7d7", /* default fg */
+	"#d7d7d7", /* default cs */
 };
 
 
@@ -156,8 +156,8 @@ static unsigned int defaultrcs = 258;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
-static unsigned int rows = 24;
+static unsigned int cols = 120;
+static unsigned int rows = 32;
 
 /*
  * Default colour and shape of the mouse cursor
