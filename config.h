@@ -5,11 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "monospace:size=10:antialias=true:autohint=true";
+static char *font = "Monospace:size=10";
 /* Spare fonts */
 static char *font2[] = {
-	"NotoColorEmoji:size=8:antialias=true:autohint=true",
-	"Mononoki Nerd Font:size=10:antialias=true:autohint=true"
+	"NotoColorEmoji:size=8",
+	"Mononoki Nerd Font:size=10"
 };
 
 static int borderpx = 2;
@@ -108,30 +108,30 @@ float alpha_def;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#1d2023",
+	"#21242b",
 	"#f74747",
 	"#87d7a7",
 	"#ff8747",
 	"#005577",
 	"#5757d7",
-	"#87d7f7",
+	"#57d7f7",
 	"#d7d7d7",
 
 	/* 8 bright colors */
-	"#282828",
+	"#373742",
 	"#f74747",
 	"#87d7a7",
 	"#ff8747",
 	"#005577",
 	"#5757d7",
-	"#87d7f7",
+	"#57d7f7",
 	"#d7d7d7",
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#1d2023", /* default bg */
+	"#1d2026", /* default bg */
 	"#d7d7d7", /* default fg */
-	"#d7d7d7", /* default cs */
+	"#5787f7", /* default cs */
 };
 
 
