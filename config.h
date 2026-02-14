@@ -8,8 +8,7 @@
 static char *font = "Monospace:size=10";
 /* Spare fonts */
 static char *font2[] = {
-	"NotoColorEmoji:size=8",
-	"Mononoki Nerd Font:size=10"
+	"NotoColorEmoji:size=8"
 };
 
 static int borderpx = 2;
@@ -108,7 +107,7 @@ float alpha_def;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"#21242b",
+	"#1d2021",
 	"#f74747",
 	"#87d7a7",
 	"#ff8747",
@@ -118,7 +117,7 @@ static const char *colorname[] = {
 	"#d7d7d7",
 
 	/* 8 bright colors */
-	"#373742",
+	"#282828",
 	"#f74747",
 	"#87d7a7",
 	"#ff8747",
@@ -129,8 +128,8 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#1d2026", /* default bg */
-	"#d7d7d7", /* default fg */
+	"#1d2021", /* default bg */
+	"#b7b7b7", /* default fg */
 	"#5787f7", /* default cs */
 };
 
